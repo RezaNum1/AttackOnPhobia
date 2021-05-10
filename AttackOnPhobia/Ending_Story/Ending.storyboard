@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wMa-kQ-Yxm">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LotusEater.otf">
+            <string>LotusEaterRegular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Ending View Controller-->
+        <scene sceneID="cnw-mn-lUp">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="wMa-kQ-Yxm" customClass="EndingViewController" customModule="AttackOnPhobia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VK4-PF-f2p">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0n-3G-Pok">
+                                <rect key="frame" x="0.0" y="50" width="390" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="C8r-sO-z2L"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="45" name="LotusEaterRegular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TouchingRambutan" translatesAutoresizingMaskIntoConstraints="NO" id="QyT-Hw-9ND">
+                                <rect key="frame" x="-2" y="283" width="361" height="382"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It's just a fruit hahaha..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE9-OO-Qk4">
+                                <rect key="frame" x="20" y="304" width="113" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LotusEaterRegular" family="LotusEater" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V07-5g-np3">
+                                <rect key="frame" x="44" y="685" width="302" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96306711440000003" green="0.77484059329999999" blue="0.59996777769999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="LotusEaterRegular" family="LotusEater" pointSize="35"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" red="0.60230159760000002" green="0.025748321790000001" blue="0.019539674739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.37255173920000001" green="0.37254416940000001" blue="0.37254929539999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishbtn:" destination="wMa-kQ-Yxm" eventType="touchUpInside" id="XDh-ou-mIj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_1" translatesAutoresizingMaskIntoConstraints="NO" id="Scd-y5-kIQ">
+                                <rect key="frame" x="38" y="252" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_1" translatesAutoresizingMaskIntoConstraints="NO" id="icU-LW-O4e">
+                                <rect key="frame" x="324" y="606" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_1" translatesAutoresizingMaskIntoConstraints="NO" id="zt7-mD-a9W">
+                                <rect key="frame" x="140" y="652" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_1" translatesAutoresizingMaskIntoConstraints="NO" id="p3j-gJ-ArD">
+                                <rect key="frame" x="175" y="293" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_1" translatesAutoresizingMaskIntoConstraints="NO" id="BLb-WX-bar">
+                                <rect key="frame" x="361" y="362" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_2" translatesAutoresizingMaskIntoConstraints="NO" id="KgS-rF-vsA">
+                                <rect key="frame" x="140" y="252" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_2" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-cC-T4S">
+                                <rect key="frame" x="324" y="37" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_2" translatesAutoresizingMaskIntoConstraints="NO" id="7Lh-hH-CJk">
+                                <rect key="frame" x="263" y="652" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_2" translatesAutoresizingMaskIntoConstraints="NO" id="nK7-bm-OpK">
+                                <rect key="frame" x="61" y="790" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_2" translatesAutoresizingMaskIntoConstraints="NO" id="VHu-QH-1kp">
+                                <rect key="frame" x="345" y="777" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_2" translatesAutoresizingMaskIntoConstraints="NO" id="hrr-lV-t6v">
+                                <rect key="frame" x="98" y="594" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_2" translatesAutoresizingMaskIntoConstraints="NO" id="P1g-C3-h28">
+                                <rect key="frame" x="121" y="420" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_3" translatesAutoresizingMaskIntoConstraints="NO" id="ylj-Qu-7c1">
+                                <rect key="frame" x="263" y="273" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_3" translatesAutoresizingMaskIntoConstraints="NO" id="MiK-ma-q0b">
+                                <rect key="frame" x="184" y="44" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_3" translatesAutoresizingMaskIntoConstraints="NO" id="edf-gn-8ic">
+                                <rect key="frame" x="27" y="639" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_3" translatesAutoresizingMaskIntoConstraints="NO" id="8NV-zh-1WM">
+                                <rect key="frame" x="352" y="544" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_3" translatesAutoresizingMaskIntoConstraints="NO" id="dlO-5n-cQC">
+                                <rect key="frame" x="50" y="432" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_4" translatesAutoresizingMaskIntoConstraints="NO" id="V1s-In-F6a">
+                                <rect key="frame" x="337" y="267" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_4" translatesAutoresizingMaskIntoConstraints="NO" id="js0-BX-iZn">
+                                <rect key="frame" x="27" y="44" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_4" translatesAutoresizingMaskIntoConstraints="NO" id="SJc-cQ-Z5v">
+                                <rect key="frame" x="352" y="138" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_4" translatesAutoresizingMaskIntoConstraints="NO" id="Gqw-Qg-VxF">
+                                <rect key="frame" x="191" y="606" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="confetti_4" translatesAutoresizingMaskIntoConstraints="NO" id="fnY-vB-XoU">
+                                <rect key="frame" x="184" y="777" width="22" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speechEnd" translatesAutoresizingMaskIntoConstraints="NO" id="ilv-nG-2e7">
+                                <rect key="frame" x="-24" y="298" width="200" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YRV-Ra-U96"/>
+                        <color key="backgroundColor" red="0.95091015099999998" green="0.68136227130000004" blue="0.43916237349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="P0n-3G-Pok" firstAttribute="trailing" secondItem="YRV-Ra-U96" secondAttribute="trailing" id="5jb-7t-Rdc"/>
+                            <constraint firstItem="P0n-3G-Pok" firstAttribute="leading" secondItem="YRV-Ra-U96" secondAttribute="leading" id="VHR-aP-zUw"/>
+                            <constraint firstItem="P0n-3G-Pok" firstAttribute="top" secondItem="VK4-PF-f2p" secondAttribute="top" constant="50" id="a8a-Gy-6hi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Ed-Ez-UyX"/>
+                    <connections>
+                        <outlet property="confetti1" destination="js0-BX-iZn" id="UfH-WH-CBq"/>
+                        <outlet property="confetti10" destination="dlO-5n-cQC" id="Fsd-gG-HZM"/>
+                        <outlet property="confetti11" destination="P1g-C3-h28" id="KLA-ED-vzI"/>
+                        <outlet property="confetti12" destination="BLb-WX-bar" id="wrM-39-sef"/>
+                        <outlet property="confetti13" destination="8NV-zh-1WM" id="2AG-38-5Wa"/>
+                        <outlet property="confetti14" destination="icU-LW-O4e" id="xVQ-ug-GHm"/>
+                        <outlet property="confetti15" destination="7Lh-hH-CJk" id="erQ-Ld-UzQ"/>
+                        <outlet property="confetti16" destination="Gqw-Qg-VxF" id="1oT-a4-A50"/>
+                        <outlet property="confetti17" destination="zt7-mD-a9W" id="1Vq-Yl-MpB"/>
+                        <outlet property="confetti18" destination="hrr-lV-t6v" id="nbS-uF-03n"/>
+                        <outlet property="confetti19" destination="edf-gn-8ic" id="qro-9Z-2ar"/>
+                        <outlet property="confetti2" destination="MiK-ma-q0b" id="CNG-pR-LnM"/>
+                        <outlet property="confetti20" destination="nK7-bm-OpK" id="WGb-tD-AeS"/>
+                        <outlet property="confetti21" destination="fnY-vB-XoU" id="fod-wK-aZH"/>
+                        <outlet property="confetti22" destination="VHu-QH-1kp" id="SEj-6S-Pn8"/>
+                        <outlet property="confetti3" destination="CXo-cC-T4S" id="49L-NJ-usF"/>
+                        <outlet property="confetti4" destination="SJc-cQ-Z5v" id="X2h-R4-stq"/>
+                        <outlet property="confetti5" destination="V1s-In-F6a" id="ldQ-vs-ymN"/>
+                        <outlet property="confetti6" destination="ylj-Qu-7c1" id="TIB-IW-nFX"/>
+                        <outlet property="confetti7" destination="p3j-gJ-ArD" id="2HY-3v-jV8"/>
+                        <outlet property="confetti8" destination="KgS-rF-vsA" id="ftN-zK-FzI"/>
+                        <outlet property="confetti9" destination="Scd-y5-kIQ" id="HXA-br-VJh"/>
+                        <outlet property="dialogueFrame" destination="ilv-nG-2e7" id="wH8-w1-W5F"/>
+                        <outlet property="finishBtnOutlet" destination="V07-5g-np3" id="fQ6-YO-wij"/>
+                        <outlet property="handImage" destination="QyT-Hw-9ND" id="IIC-Ss-YZ4"/>
+                        <outlet property="handImageText" destination="hE9-OO-Qk4" id="fSO-Vm-0or"/>
+                        <outlet property="topLabel" destination="P0n-3G-Pok" id="PUR-IG-kSB"/>
+                        <outlet property="viewLayout" destination="VK4-PF-f2p" id="byY-1c-FU9"/>
+                        <segue destination="5oi-w0-i0b" kind="show" identifier="backToMain" id="dn7-es-rDz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3m7-uf-IAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6064.6153846153848" y="111.61137440758293"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="NB9-jX-v5P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="5oi-w0-i0b" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5gd-pK-NA9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a75-36-BLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6846" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TouchingRambutan" width="361" height="257"/>
+        <image name="confetti_1" width="38" height="37"/>
+        <image name="confetti_2" width="40" height="41"/>
+        <image name="confetti_3" width="37" height="37"/>
+        <image name="confetti_4" width="42" height="42"/>
+        <image name="speechEnd" width="154" height="135"/>
+    </resources>
+</document>

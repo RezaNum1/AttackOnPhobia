@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7oI-Vk-fW9">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LotusEater.otf">
+            <string>LotusEaterRegular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Story Two View Controller-->
+        <scene sceneID="aYT-hF-N9N">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="7oI-Vk-fW9" customClass="StoryTwoViewController" customModule="AttackOnPhobia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gju-tg-XVb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Someone Scared Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRL-gr-ITX">
+                                <rect key="frame" x="7" y="73" width="377" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LotusEaterRegular" family="LotusEater" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="3" height="1"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech" translatesAutoresizingMaskIntoConstraints="NO" id="j10-k7-Rz5">
+                                <rect key="frame" x="11" y="180" width="209" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Euuhh... Rambutan, Creepy Fruit...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8S-l4-HAM">
+                                <rect key="frame" x="34" y="245" width="176" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LotusEaterRegular" family="LotusEater" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="d2X-wT-hcc">
+                                <rect key="frame" x="0.0" y="359" width="179" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="child" translatesAutoresizingMaskIntoConstraints="NO" id="tdy-nq-WYt">
+                                <rect key="frame" x="178" y="483" width="206" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment" translatesAutoresizingMaskIntoConstraints="NO" id="xyd-VA-uF6">
+                                <rect key="frame" x="245" y="364" width="129" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm Scared ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytw-vo-l9w">
+                                <rect key="frame" x="273" y="377" width="73" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LotusEaterRegular" family="LotusEater" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap To Continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDN-IO-mSH">
+                                <rect key="frame" x="106" y="756" width="178" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LotusEaterRegular" family="LotusEater" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PVx-0c-2WJ"/>
+                        <color key="backgroundColor" red="0.95091015099999998" green="0.68136227130000004" blue="0.43916237349999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UzQ-E5-Qmm"/>
+                    <connections>
+                        <outlet property="boyImg" destination="tdy-nq-WYt" id="mhm-Hi-vLs"/>
+                        <outlet property="continueBtn" destination="pDN-IO-mSH" id="8F0-mD-0uy"/>
+                        <outlet property="dialogueImage" destination="j10-k7-Rz5" id="2VB-7o-hQL"/>
+                        <outlet property="dialogueImageTwo" destination="xyd-VA-uF6" id="CAD-J0-jJ4"/>
+                        <outlet property="dialogueTxt" destination="C8S-l4-HAM" id="pvN-aw-fIH"/>
+                        <outlet property="dialogueTxtTwo" destination="ytw-vo-l9w" id="DqD-fF-sfU"/>
+                        <outlet property="handImg" destination="d2X-wT-hcc" id="fbO-Fl-rkA"/>
+                        <outlet property="storyTxt" destination="CRL-gr-ITX" id="uHA-0i-QEQ"/>
+                        <segue destination="zeb-Wi-cwA" kind="show" identifier="story_3" id="djg-AP-FTh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZQJ-Rk-3GA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1486.9565217391305" y="96.428571428571431"/>
+        </scene>
+        <!--Story_3-->
+        <scene sceneID="hCl-xZ-lZ2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Story_3" id="zeb-Wi-cwA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UWe-OF-tkK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdQ-JN-RwN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="child" width="215" height="212"/>
+        <image name="comment" width="129" height="116"/>
+        <image name="hand" width="188" height="223"/>
+        <image name="speech" width="196" height="172"/>
+    </resources>
+</document>

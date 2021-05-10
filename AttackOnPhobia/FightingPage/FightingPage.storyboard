@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A2h-tb-U2R">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fighting Page View Controller-->
+        <scene sceneID="b3W-zM-jvh">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="A2h-tb-U2R" customClass="FightingPageViewController" customModule="AttackOnPhobia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Go-SR-RM5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCo-hb-Lel">
+                                <rect key="frame" x="0.0" y="605" width="390" height="239"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screw" translatesAutoresizingMaskIntoConstraints="NO" id="5pg-eH-i1d">
+                                        <rect key="frame" x="339" y="8" width="47" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="gAE-vb-SGX"/>
+                                            <constraint firstAttribute="width" constant="47" id="u6M-h7-SgV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHU-mR-1zw">
+                                        <rect key="frame" x="0.0" y="58" width="190" height="181"/>
+                                        <color key="backgroundColor" red="0.22340154649999999" green="0.51078605649999997" blue="0.96867245440000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="181" id="d6c-fO-LnJ"/>
+                                            <constraint firstAttribute="width" constant="190" id="oUV-vF-XcL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="60"/>
+                                        <state key="normal" title="Hit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rightBtnPressed:" destination="A2h-tb-U2R" eventType="touchUpInside" id="ulZ-Bn-TGI"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screw" translatesAutoresizingMaskIntoConstraints="NO" id="KhP-jI-bq4">
+                                        <rect key="frame" x="8" y="8" width="47" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="gdR-iw-CkY"/>
+                                            <constraint firstAttribute="width" constant="47" id="pXa-rd-Yop"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXF-gs-Juv">
+                                        <rect key="frame" x="200" y="58" width="190" height="181"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.91945314410000001" green="0.26607269049999999" blue="0.35293039679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="60"/>
+                                        <state key="normal" title="Hit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leftBtnPressed:" destination="A2h-tb-U2R" eventType="touchUpInside" id="Bhg-ny-uUi"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Fight!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScD-1M-XTy">
+                                        <rect key="frame" x="0.0" y="8" width="390" height="41"/>
+                                        <fontDescription key="fontDescription" name="Menlo-BoldItalic" family="Menlo" pointSize="35"/>
+                                        <color key="textColor" red="0.9152941108" green="0.1981457174" blue="0.13718390459999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90218876186966757" green="0.88689742692272411" blue="0.88689742692272411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="ScD-1M-XTy" firstAttribute="top" secondItem="cCo-hb-Lel" secondAttribute="top" constant="8" id="1kp-HZ-hba"/>
+                                    <constraint firstAttribute="trailing" secondItem="ScD-1M-XTy" secondAttribute="trailing" id="Bez-R4-O0C"/>
+                                    <constraint firstItem="ScD-1M-XTy" firstAttribute="leading" secondItem="cCo-hb-Lel" secondAttribute="leading" id="KW6-yl-QAe"/>
+                                    <constraint firstItem="5pg-eH-i1d" firstAttribute="top" secondItem="cCo-hb-Lel" secondAttribute="top" constant="8" id="eiW-tl-7Ry"/>
+                                    <constraint firstAttribute="trailing" secondItem="5pg-eH-i1d" secondAttribute="trailing" constant="4" id="emi-1N-wRc"/>
+                                    <constraint firstItem="KhP-jI-bq4" firstAttribute="leading" secondItem="cCo-hb-Lel" secondAttribute="leading" constant="8" id="gFV-Fv-Z7T"/>
+                                    <constraint firstItem="cHU-mR-1zw" firstAttribute="top" secondItem="ScD-1M-XTy" secondAttribute="bottom" constant="9" id="hB3-p5-vgj"/>
+                                    <constraint firstItem="KhP-jI-bq4" firstAttribute="top" secondItem="cCo-hb-Lel" secondAttribute="top" constant="8" id="hvt-5R-EhF"/>
+                                    <constraint firstItem="cHU-mR-1zw" firstAttribute="top" secondItem="KhP-jI-bq4" secondAttribute="bottom" constant="3" id="nuY-4f-0h8"/>
+                                    <constraint firstItem="cHU-mR-1zw" firstAttribute="leading" secondItem="cCo-hb-Lel" secondAttribute="leading" id="trK-by-0m3"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PoliceLine" translatesAutoresizingMaskIntoConstraints="NO" id="nec-2N-iaS">
+                                <rect key="frame" x="0.0" y="553" width="390" height="52"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" fixedFrame="YES" image="MonsterFear" translatesAutoresizingMaskIntoConstraints="NO" id="eTY-km-9SF">
+                                <rect key="frame" x="3" y="73" width="384" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="u7n-dF-sgN" customClass="CustomSlider" customModule="AttackOnPhobia" customModuleProvider="target">
+                                <rect key="frame" x="22" y="463" width="347" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="maximumTrackTintColor" red="0.9152941108" green="0.1981457174" blue="0.13718390459999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="thumbTintColor" systemColor="systemBlueColor"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fear" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uC-NJ-sdT">
+                                <rect key="frame" x="313" y="481" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Courage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2C-fm-UFl">
+                                <rect key="frame" x="35" y="481" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LongFire" translatesAutoresizingMaskIntoConstraints="NO" id="EY5-rZ-U5a">
+                                <rect key="frame" x="0.0" y="560" width="390" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MZh-Zz-TRL"/>
+                        <color key="backgroundColor" red="0.94700068240000002" green="0.68135911230000001" blue="0.43916255240000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cCo-hb-Lel" firstAttribute="trailing" secondItem="MZh-Zz-TRL" secondAttribute="trailing" id="24S-A5-rs9"/>
+                            <constraint firstItem="cCo-hb-Lel" firstAttribute="trailing" secondItem="nec-2N-iaS" secondAttribute="trailing" id="5UT-v5-WXL"/>
+                            <constraint firstItem="cCo-hb-Lel" firstAttribute="leading" secondItem="MZh-Zz-TRL" secondAttribute="leading" id="Mhe-QK-OZo"/>
+                            <constraint firstItem="nec-2N-iaS" firstAttribute="trailing" secondItem="MZh-Zz-TRL" secondAttribute="trailing" id="auY-dn-zVb"/>
+                            <constraint firstItem="cCo-hb-Lel" firstAttribute="leading" secondItem="nec-2N-iaS" secondAttribute="leading" id="eDR-Vy-eVF"/>
+                            <constraint firstAttribute="bottom" secondItem="cCo-hb-Lel" secondAttribute="bottom" id="jeE-Zr-hGq"/>
+                            <constraint firstItem="cCo-hb-Lel" firstAttribute="top" secondItem="nec-2N-iaS" secondAttribute="bottom" id="jud-BW-DQW"/>
+                            <constraint firstItem="cCo-hb-Lel" firstAttribute="top" secondItem="8Go-SR-RM5" secondAttribute="top" constant="605" id="nL5-mQ-5mX"/>
+                            <constraint firstItem="nec-2N-iaS" firstAttribute="leading" secondItem="MZh-Zz-TRL" secondAttribute="leading" id="viO-Mj-Cld"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DiK-Vi-RSW"/>
+                    <connections>
+                        <outlet property="leftBtn" destination="iXF-gs-Juv" id="FOv-CP-Jvm"/>
+                        <outlet property="monsterImg" destination="eTY-km-9SF" id="Pei-cz-dJo"/>
+                        <outlet property="onFireImg" destination="EY5-rZ-U5a" id="ozp-m9-2u3"/>
+                        <outlet property="rightBtn" destination="cHU-mR-1zw" id="kKD-Ld-Icw"/>
+                        <outlet property="sliderView" destination="u7n-dF-sgN" id="O9O-5Q-xQP"/>
+                        <outlet property="supportLbl" destination="ScD-1M-XTy" id="tBr-QL-EKq"/>
+                        <segue destination="Lne-TW-PDD" kind="show" identifier="ending" id="Eum-XW-AG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfL-P5-4SU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5284.6153846153848" y="111.61137440758293"/>
+        </scene>
+        <!--Ending-->
+        <scene sceneID="o1P-Gt-VY5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Ending" id="Lne-TW-PDD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="unq-b6-cj0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c09-F6-x5u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6066" y="112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LongFire" width="3584" height="382"/>
+        <image name="MonsterFear" width="357" height="384"/>
+        <image name="PoliceLine" width="376" height="52"/>
+        <image name="Screw" width="43" height="43"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

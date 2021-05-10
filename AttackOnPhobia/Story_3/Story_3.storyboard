@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q7C-lb-xRY">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LotusEater.otf">
+            <string>LotusEaterRegular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Story Three View Controller-->
+        <scene sceneID="r9L-mt-M47">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="q7C-lb-xRY" customClass="StoryThreeViewController" customModule="AttackOnPhobia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJo-78-1Mn">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap To Continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4j-mP-sRU">
+                                <rect key="frame" x="106" y="746" width="178" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="LotusEaterRegular" family="LotusEater" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Fear Continued to carry over until I was A Teenager..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnD-Dc-jdA">
+                                <rect key="frame" x="38" y="237" width="315" height="215"/>
+                                <fontDescription key="fontDescription" name="LotusEaterRegular" family="LotusEater" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hMF-mD-pYH"/>
+                        <color key="backgroundColor" red="0.92332559820000004" green="0.35390633339999999" blue="0.32938700910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hMF-mD-pYH" firstAttribute="trailing" secondItem="UnD-Dc-jdA" secondAttribute="trailing" constant="37" id="HtH-Sr-3Zi"/>
+                            <constraint firstItem="UnD-Dc-jdA" firstAttribute="leading" secondItem="hMF-mD-pYH" secondAttribute="leading" constant="38" id="XrE-NG-UTc"/>
+                            <constraint firstItem="UnD-Dc-jdA" firstAttribute="top" secondItem="fJo-78-1Mn" secondAttribute="topMargin" constant="180" id="yFt-yR-CaD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0j3-GZ-aK5"/>
+                    <connections>
+                        <outlet property="continueTxt" destination="Q4j-mP-sRU" id="bqX-9B-nLQ"/>
+                        <outlet property="storyTxt" destination="UnD-Dc-jdA" id="RqH-mO-YRr"/>
+                        <segue destination="K90-Ow-wgt" kind="show" identifier="story_4" id="X7P-dt-uiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSO-2y-fUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2263.768115942029" y="95.758928571428569"/>
+        </scene>
+        <!--Story_4-->
+        <scene sceneID="ak0-Xi-AzU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Story_4" id="K90-Ow-wgt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aNV-uv-15v"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQP-mH-cw9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2860" y="95"/>
+        </scene>
+    </scenes>
+</document>
